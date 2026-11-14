@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Generator · LoyaltySynth AI{% endblock %}
+{% block crumb %}Generator{% endblock %}
+{% block content %}
+<div class="eyebrow">SYNTHETIC DATA WORKSHOP</div>
+<div class="page-heading"><div><h1>Configure your dataset</h1><p>Choose your data shape and generation method.</p></div></div>
+<div class="generator-grid">
+  <section class="panel form-panel">
+    <div class="eyebrow">DATA PARAMETERS</div><h2>Generation settings</h2>
+    <form method="post" id="generator-form">
+      <div class="form-grid">
+        <div><label for="count">Transaction count</label><select id="count" name="count">{% for n in [100,500,1000,5000,10000] %}<option value="{{ n }}" {% if n==500 %}selected{% endif %}>{{ '{:,}'.format(n) }}</option>{% endfor %}</select></div>
+        <div><label for="customers">Number of customers</label><input id="customers" name="customers" type="number" min="1" max="10000" value="100" required></div>
+        <div><label for="start_date">Start date</label><input id="start_date" name="start_date" type="date" value="2025-01-01" required></div>
+        <div><label for="end_date">End date</label><input id="end_date" name="end_date" type="date" value="2025-12-31" required></div>
+        <div><label for="earning_ratio">Base points per currency unit</label><input id="earning_ratio" name="earning_ratio" type="number" min="0.1" max="10" step="0.1" value="1" required></div>
+        <div><label for="fraud_percent">Simulated fraud percentage</label><div class="suffix"><input id="fraud_percent" name="fraud_percent" type="number" min="0" max="50" step="0.5" value="3" required><span>%</span></div></div>
+        <div class="wide"><label>Customer segments</label><div class="checks">{% for segment in ['Standard','Premium','VIP'] %}<label class="check"><input type="checkbox" name="segments" value="{{ segment }}" checked> {{ segment }}</label>{% endfor %}</div></div>
+        <div class="wide"><label for="mode">Generation engine</label><select id="mode" name="mode"><option value="rules">Business rules (fast, always available)</option><option value="ctgan">SDV CTGAN (reuse or train seed model)</option></select><p class="help">CTGAN loads a compatible saved model. A rule-based fallback is reported if SDV is unavailable.</p></div>
+        <div class="wide"><label class="check"><input type="checkbox" name="retrain_model"> Retrain and replace the saved CTGAN model</label><p class="help">Only applies when SDV CTGAN is selected. Retraining can take several minutes.</p></div>
+      </div>
+      <button class="button primary full" type="submit">✣ &nbsp; Generate synthetic transactions</button>
+    </form>
+  </section>
+  <aside class="panel current-panel">
+    <div class="eyebrow">CURRENT DATASET</div><h2>Ready to explore</h2>
+    <div class="summary-row"><span>Transactions</span><b>{{ '{:,}'.format(summary.transactions) }}</b></div>
+    <div class="summary-row"><span>Customers</span><b>{{ '{:,}'.format(summary.customers) }}</b></div>
+    <div class="summary-row"><span>Points earned</span><b>{{ '{:,}'.format(summary.points_earned) }}</b></div>
+    <div class="summary-row"><span>Suspicious</span><b>{{ '{:,}'.format(summary.fraud_count) }}</b></div>
+    <a class="button secondary full" href="{{ url_for('download') }}">↓ &nbsp; Download CSV</a>
+    <a class="link standalone" href="{{ url_for('download_fraud') }}">Download fraud-labeled data →</a>
+    <p class="help note">Fraud types are simulated examples, not verified real-world fraud.</p>
+  </aside>
+</div>
+{% endblock %}

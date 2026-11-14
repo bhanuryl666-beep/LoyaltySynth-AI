@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">LoyaltySynth mark</title>
+  <defs>
+    <linearGradient id="tile" x1="8" y1="4" x2="57" y2="61" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A47BFF"/>
+      <stop offset="1" stop-color="#5545C8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="21" y1="17" x2="45" y2="47" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D8FFF7"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="19" fill="url(#tile)"/>
+  <path d="M21 18v27.5c0 2.5 2 4.5 4.5 4.5H43" stroke="url(#shine)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M42 14.5 44.8 21l6.7 2.6-6.7 2.7-2.8 6.5-2.7-6.5-6.6-2.7 6.6-2.6 2.7-6.5Z" fill="#fff"/>
+  <circle cx="47.5" cy="43.5" r="4.5" fill="#69E6D3"/>
+</svg>

@@ -1,0 +1,101 @@
+transaction_id,customer_id,transaction_date,transaction_type,purchase_amount,points_earned,points_redeemed,points_balance,product_category,payment_method,customer_segment,earning_ratio,fraud_flag,fraud_type
+LS-00000001,CUS-00001,2026-01-01 01:44:35,purchase,164.68,329,0,329,Home,Debit card,VIP,1.0,0,Normal
+LS-00000002,CUS-00004,2026-01-01 07:27:05,purchase,10.33,15,0,15,Fashion,Credit card,Premium,1.0,0,Normal
+LS-00000003,CUS-00016,2026-01-01 08:19:43,purchase,22.7,34,0,34,Electronics,Wallet,Premium,1.0,0,Normal
+LS-00000004,CUS-00007,2026-01-01 17:16:31,purchase,39.81,59,0,59,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000005,CUS-00016,2026-01-02 01:17:30,purchase,114.0,171,0,205,Fashion,Wallet,Premium,1.0,0,Normal
+LS-00000006,CUS-00020,2026-01-02 04:28:35,purchase,21.06,42,0,42,Home,Cash,VIP,1.0,0,Normal
+LS-00000007,CUS-00018,2026-01-02 12:22:04,purchase,95.39,190,0,190,Dining,Cash,VIP,1.0,0,Normal
+LS-00000008,CUS-00016,2026-01-02 19:56:33,purchase,4.56,6,0,211,Electronics,Wallet,Premium,1.0,0,Normal
+LS-00000009,CUS-00001,2026-01-03 12:41:11,purchase,23.78,47,0,376,Home,Debit card,VIP,1.0,0,Normal
+LS-00000010,CUS-00013,2026-01-03 21:17:40,purchase,109.56,1000,0,1000,Grocery,Credit card,Standard,1.0,1,Abnormal accumulation
+LS-00000011,CUS-00001,2026-01-04 05:00:24,purchase,13.94,27,0,403,Home,Debit card,VIP,1.0,0,Normal
+LS-00000012,CUS-00003,2026-01-04 09:47:24,purchase,35.75,71,0,71,Grocery,Debit card,VIP,1.0,0,Normal
+LS-00000013,CUS-00020,2026-01-04 20:59:48,purchase,48.74,97,0,139,Beauty,Wallet,VIP,1.0,0,Normal
+LS-00000014,CUS-00008,2026-01-05 06:15:59,purchase,24.26,48,0,48,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000015,CUS-00020,2026-01-05 11:41:30,purchase,52.95,105,0,244,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000016,CUS-00005,2026-01-05 23:23:53,purchase,6.1,12,0,12,Fashion,Credit card,VIP,1.0,0,Normal
+LS-00000017,CUS-00004,2026-01-05 23:59:38,purchase,10.1,15,0,30,Beauty,Credit card,Premium,1.0,0,Normal
+LS-00000018,CUS-00003,2026-01-06 23:57:57,purchase,24.05,48,0,119,Home,Cash,VIP,1.0,0,Normal
+LS-00000019,CUS-00015,2026-01-07 16:17:57,purchase,47.97,47,0,47,Dining,Credit card,Standard,1.0,0,Normal
+LS-00000020,CUS-00003,2026-01-07 20:00:04,purchase,10.48,20,0,139,Grocery,Debit card,VIP,1.0,0,Normal
+LS-00000021,CUS-00010,2026-01-08 03:19:59,purchase,27.58,41,0,41,Grocery,Credit card,Premium,1.0,0,Normal
+LS-00000022,CUS-00019,2026-01-08 04:45:07,purchase,10.28,20,0,20,Beauty,Debit card,VIP,1.0,0,Normal
+LS-00000023,CUS-00001,2026-01-08 05:17:40,redeem,0.0,0,12,391,Beauty,Debit card,VIP,1.0,0,Normal
+LS-00000024,CUS-00008,2026-01-08 06:34:52,purchase,26.46,52,0,100,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000025,CUS-00014,2026-01-08 09:25:46,purchase,20.1,30,0,30,Home,Credit card,Premium,1.0,0,Normal
+LS-00000026,CUS-00020,2026-01-09 01:41:05,purchase,65.47,130,0,374,Electronics,Wallet,VIP,1.0,0,Normal
+LS-00000027,CUS-00014,2026-01-09 12:17:11,purchase,33.58,50,0,80,Home,Credit card,Premium,1.0,0,Normal
+LS-00000028,CUS-00013,2026-01-09 12:45:05,redeem,0.0,0,17,983,Grocery,Debit card,Standard,1.0,0,Normal
+LS-00000029,CUS-00002,2026-01-09 13:06:57,purchase,8.22,12,0,12,Beauty,Cash,Premium,1.0,0,Normal
+LS-00000030,CUS-00004,2026-01-09 15:57:24,purchase,43.42,65,0,95,Fashion,Credit card,Premium,1.0,0,Normal
+LS-00000031,CUS-00016,2026-01-10 02:06:19,purchase,156.26,234,0,445,Electronics,Wallet,Premium,1.0,0,Normal
+LS-00000032,CUS-00011,2026-01-10 04:26:42,purchase,24.54,1524,0,1524,Beauty,Credit card,Standard,1.0,1,Abnormal accumulation
+LS-00000033,CUS-00011,2026-01-10 04:26:43,redeem,0.0,0,500,1024,Beauty,Credit card,Standard,1.0,1,Large redemption
+LS-00000044,CUS-00011,2026-01-10 04:26:44,redeem,0.0,0,500,524,Beauty,Credit card,Standard,1.0,1,Rapid redemption
+LS-00000053,CUS-00011,2026-01-10 04:26:45,redeem,0.0,0,500,24,Beauty,Credit card,Standard,1.0,1,Repeated suspicious activity
+LS-00000034,CUS-00003,2026-01-11 06:24:48,purchase,54.11,108,0,247,Home,Debit card,VIP,1.0,0,Normal
+LS-00000035,CUS-00007,2026-01-11 17:18:31,purchase,23.03,34,0,93,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000036,CUS-00015,2026-01-11 19:55:34,purchase,15.25,15,0,62,Electronics,Credit card,Standard,1.0,0,Normal
+LS-00000037,CUS-00018,2026-01-11 21:51:20,redeem,0.0,0,84,106,Dining,Cash,VIP,1.0,0,Normal
+LS-00000038,CUS-00009,2026-01-12 00:21:03,purchase,33.58,67,0,67,Grocery,Cash,VIP,1.0,0,Normal
+LS-00000039,CUS-00019,2026-01-12 00:40:09,purchase,15.44,30,0,50,Grocery,Debit card,VIP,1.0,0,Normal
+LS-00000040,CUS-00019,2026-01-12 06:59:47,purchase,23.79,47,0,97,Home,Debit card,VIP,1.0,0,Normal
+LS-00000041,CUS-00008,2026-01-12 20:31:33,purchase,84.6,169,0,269,Home,Cash,VIP,1.0,0,Normal
+LS-00000042,CUS-00018,2026-01-13 15:23:09,purchase,16.8,33,0,139,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000043,CUS-00016,2026-01-14 01:29:00,redeem,0.0,0,4,441,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000045,CUS-00006,2026-01-14 18:11:25,purchase,56.46,84,0,84,Dining,Wallet,Premium,1.0,0,Normal
+LS-00000046,CUS-00002,2026-01-14 21:36:46,purchase,45.38,68,0,80,Electronics,Cash,Premium,1.0,0,Normal
+LS-00000047,CUS-00002,2026-01-15 04:25:59,purchase,21.16,31,0,111,Electronics,Cash,Premium,1.0,0,Normal
+LS-00000048,CUS-00007,2026-01-15 11:37:37,purchase,16.23,24,0,117,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000049,CUS-00007,2026-01-15 12:55:25,purchase,31.5,47,0,164,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000050,CUS-00008,2026-01-15 20:04:05,purchase,26.18,52,0,321,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000051,CUS-00005,2026-01-16 00:05:18,purchase,31.51,63,0,75,Beauty,Debit card,VIP,1.0,0,Normal
+LS-00000052,CUS-00007,2026-01-16 04:42:23,purchase,26.71,40,0,204,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000054,CUS-00009,2026-01-16 18:25:16,purchase,29.32,58,0,125,Dining,Debit card,VIP,1.0,0,Normal
+LS-00000055,CUS-00011,2026-01-17 20:31:33,purchase,34.51,34,0,58,Fashion,Credit card,Standard,1.0,0,Normal
+LS-00000056,CUS-00015,2026-01-18 06:27:17,purchase,23.3,23,0,85,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000057,CUS-00003,2026-01-18 22:27:22,purchase,61.72,123,0,370,Home,Debit card,VIP,1.0,0,Normal
+LS-00000058,CUS-00018,2026-01-19 00:52:45,redeem,0.0,0,51,88,Grocery,Cash,VIP,1.0,0,Normal
+LS-00000059,CUS-00016,2026-01-19 09:30:29,purchase,33.0,49,0,490,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000060,CUS-00009,2026-01-19 18:32:39,purchase,43.51,87,0,212,Dining,Cash,VIP,1.0,0,Normal
+LS-00000061,CUS-00014,2026-01-19 21:03:55,purchase,16.94,25,0,105,Home,Credit card,Premium,1.0,0,Normal
+LS-00000062,CUS-00015,2026-01-20 16:59:33,purchase,88.58,88,0,173,Electronics,Credit card,Standard,1.0,0,Normal
+LS-00000063,CUS-00018,2026-01-20 18:50:25,purchase,78.52,157,0,245,Grocery,Cash,VIP,1.0,0,Normal
+LS-00000064,CUS-00017,2026-01-20 19:41:09,purchase,25.28,50,0,50,Grocery,Cash,VIP,1.0,0,Normal
+LS-00000065,CUS-00011,2026-01-20 21:05:30,purchase,38.58,38,0,96,Beauty,Credit card,Standard,1.0,0,Normal
+LS-00000066,CUS-00017,2026-01-21 22:47:22,purchase,33.14,66,0,116,Home,Cash,VIP,1.0,0,Normal
+LS-00000067,CUS-00011,2026-01-22 13:56:52,purchase,33.64,33,0,129,Beauty,Credit card,Standard,1.0,0,Normal
+LS-00000068,CUS-00019,2026-01-22 17:26:38,purchase,107.83,215,0,312,Fashion,Debit card,VIP,1.0,0,Normal
+LS-00000069,CUS-00006,2026-01-22 20:49:37,purchase,54.17,81,0,165,Travel,Wallet,Premium,1.0,0,Normal
+LS-00000070,CUS-00019,2026-01-23 00:14:23,redeem,0.0,0,140,172,Home,Debit card,VIP,1.0,0,Normal
+LS-00000071,CUS-00015,2026-01-23 04:07:04,redeem,0.0,0,10,163,Dining,Credit card,Standard,1.0,0,Normal
+LS-00000072,CUS-00013,2026-01-24 07:33:06,purchase,12.42,12,0,995,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000073,CUS-00013,2026-01-24 12:25:52,redeem,0.0,0,8,987,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000074,CUS-00012,2026-01-24 18:40:12,purchase,68.1,102,0,102,Travel,Wallet,Premium,1.0,0,Normal
+LS-00000075,CUS-00008,2026-01-25 06:23:54,purchase,137.26,274,0,595,Electronics,Debit card,VIP,1.0,0,Normal
+LS-00000076,CUS-00002,2026-01-25 07:02:26,purchase,69.45,104,0,215,Beauty,Cash,Premium,1.0,0,Normal
+LS-00000077,CUS-00013,2026-01-25 17:08:59,purchase,180.39,180,0,1167,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000078,CUS-00009,2026-01-25 18:39:19,purchase,24.44,48,0,260,Dining,Cash,VIP,1.0,0,Normal
+LS-00000079,CUS-00011,2026-01-26 05:16:49,purchase,52.65,52,0,181,Beauty,Credit card,Standard,1.0,0,Normal
+LS-00000080,CUS-00020,2026-01-26 05:53:33,redeem,0.0,0,135,239,Dining,Cash,VIP,1.0,0,Normal
+LS-00000081,CUS-00013,2026-01-26 10:09:41,purchase,40.78,40,0,1207,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000082,CUS-00009,2026-01-26 13:56:21,purchase,21.21,42,0,302,Grocery,Cash,VIP,1.0,0,Normal
+LS-00000083,CUS-00018,2026-01-26 21:06:03,purchase,16.58,33,0,278,Fashion,Cash,VIP,1.0,0,Normal
+LS-00000084,CUS-00013,2026-01-27 16:38:03,purchase,39.27,39,0,1246,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000085,CUS-00005,2026-01-28 03:09:05,purchase,59.0,118,0,193,Fashion,Debit card,VIP,1.0,0,Normal
+LS-00000086,CUS-00016,2026-01-28 05:19:26,purchase,62.76,94,0,584,Electronics,Wallet,Premium,1.0,0,Normal
+LS-00000087,CUS-00004,2026-01-28 08:53:14,purchase,19.36,29,0,124,Fashion,Credit card,Premium,1.0,0,Normal
+LS-00000088,CUS-00008,2026-01-29 03:12:36,purchase,71.09,142,0,737,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000089,CUS-00017,2026-01-29 12:53:46,purchase,83.07,166,0,282,Fashion,Cash,VIP,1.0,0,Normal
+LS-00000090,CUS-00002,2026-01-29 13:41:47,purchase,26.31,39,0,254,Beauty,Cash,Premium,1.0,0,Normal
+LS-00000091,CUS-00007,2026-01-29 16:38:16,purchase,40.12,60,0,264,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000092,CUS-00005,2026-01-30 06:56:40,purchase,27.02,54,0,247,Fashion,Debit card,VIP,1.0,0,Normal
+LS-00000093,CUS-00008,2026-01-30 13:20:10,redeem,0.0,0,1,736,Electronics,Cash,VIP,1.0,0,Normal
+LS-00000094,CUS-00013,2026-01-30 13:41:26,purchase,102.25,102,0,1348,Grocery,Credit card,Standard,1.0,0,Normal
+LS-00000095,CUS-00016,2026-01-30 15:52:10,purchase,26.8,40,0,624,Electronics,Wallet,Premium,1.0,0,Normal
+LS-00000096,CUS-00011,2026-01-31 03:30:18,redeem,0.0,0,98,83,Beauty,Credit card,Standard,1.0,0,Normal
+LS-00000097,CUS-00004,2026-01-31 04:19:17,purchase,13.46,20,0,144,Beauty,Credit card,Premium,1.0,0,Normal
+LS-00000098,CUS-00012,2026-01-31 07:42:58,purchase,33.64,50,0,152,Grocery,Wallet,Premium,1.0,0,Normal
+LS-00000099,CUS-00013,2026-01-31 08:57:20,purchase,47.84,47,0,1395,Beauty,Credit card,Standard,1.0,0,Normal
+LS-00000100,CUS-00008,2026-01-31 15:48:30,purchase,47.89,95,0,831,Home,Cash,VIP,1.0,0,Normal

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Analytics · LoyaltySynth AI{% endblock %}
+{% block crumb %}Fraud analytics{% endblock %}
+{% block content %}
+<div class="eyebrow">PATTERNS & MODEL DEMO</div>
+<div class="page-heading"><div><h1>Fraud analytics</h1><p>Explore labeled examples and a customer-separated classifier demonstration.</p></div><a class="button secondary" href="{{ url_for('download_fraud') }}">↓ &nbsp; Fraud-labeled CSV</a></div>
+<div class="charts-grid">
+  <article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">LABEL BREAKDOWN</div><h2>Normal vs suspicious</h2></div></div><div id="fraud-chart" class="chart" data-normal="{{ summary.transactions-summary.fraud_count }}" data-fraud="{{ summary.fraud_count }}"></div></article>
+  <article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">SIMULATED PATTERNS</div><h2>Fraud type distribution</h2></div></div><div id="fraud-types-chart" class="chart" data-labels='{{ summary.fraud_types.keys()|list|tojson }}' data-values='{{ summary.fraud_types.values()|list|tojson }}'></div></article>
+  <article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">CUSTOMER SPEND</div><h2>Spending categories</h2></div></div><div id="spend-chart" class="chart" data-labels='{{ summary.categories.keys()|list|tojson }}' data-values='{{ summary.categories.values()|list|tojson }}'></div></article>
+  <article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">LOYALTY ACTIVITY</div><h2>Monthly points redeemed</h2></div></div><div id="redemption-chart" class="chart" data-labels='{{ summary.monthly_redemptions.keys()|list|tojson }}' data-values='{{ summary.monthly_redemptions.values()|list|tojson }}'></div></article>
+</div>
+<article class="panel model-panel">
+  <div class="panel-heading"><div><div class="eyebrow">SCIKIT-LEARN DEMONSTRATION</div><h2>Fraud classification evaluation</h2></div><span class="badge">RANDOM FOREST</span></div>
+  {% if model.available %}
+  <p class="help">The fraud label columns are excluded from model input, and customer IDs stay within one side of the train/test split. Features: {{ model.feature_columns|join(', ') }}.</p>
+  <div class="model-metrics"><div><small>PRECISION</small><b>{{ '%.3f'|format(model.precision) }}</b></div><div><small>RECALL</small><b>{{ '%.3f'|format(model.recall) }}</b></div><div><small>F1 SCORE</small><b>{{ '%.3f'|format(model.f1) }}</b></div><div><small>ACCURACY</small><b>{{ '%.3f'|format(model.accuracy) }}</b></div></div>
+  <h3>Confusion matrix <small>(actual rows × predicted columns; normal, suspicious)</small></h3><div class="matrix"><span>TN {{ model.confusion[0][0] }}</span><span>FP {{ model.confusion[0][1] }}</span><span>FN {{ model.confusion[1][0] }}</span><span>TP {{ model.confusion[1][1] }}</span></div>
+  {% else %}<p class="help">{{ model.message }}</p>{% endif %}
+  <p class="disclaimer">These metrics evaluate the generated simulation labels only. They do not measure or predict real-world fraud detection performance.</p>
+</article>
+<article class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">CUSTOMER MIX</div><h2>Transactions by customer segment</h2></div></div><div id="segment-chart" class="chart short" data-labels='{{ summary.segments.keys()|list|tojson }}' data-values='{{ summary.segments.values()|list|tojson }}'></div></article>
+{% endblock %}
